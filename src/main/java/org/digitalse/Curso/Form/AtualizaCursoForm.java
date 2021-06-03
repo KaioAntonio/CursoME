@@ -8,6 +8,7 @@ import org.digitalse.Curso.repository.CursoRepository;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class AtualizaCursoForm {
+	private int id;
 	private String nome;
 	private String descricao;
 	private String emanta;
@@ -17,6 +18,26 @@ public class AtualizaCursoForm {
 	private Date dataInicio;
 	private float valor;
 	
+	
+	
+	public int getId() {
+		return id;
+	}
+
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}

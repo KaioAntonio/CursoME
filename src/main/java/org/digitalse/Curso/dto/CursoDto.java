@@ -11,6 +11,7 @@ import org.springframework.data.domain.Page;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
 public class CursoDto {
+	private int id;
 	private String nome;
 	private String descricao;
 	private String emanta;
@@ -21,6 +22,7 @@ public class CursoDto {
 	private float valor;
 	
 	public CursoDto(Curso produto) {
+		this.id = produto.getId();
 		this.nome = produto.getNome();
 		this.descricao = produto.getDescricao();
 		this.emanta = produto.getEmanta();
@@ -29,6 +31,39 @@ public class CursoDto {
 		this.valor = produto.getValor();
 		
 	}
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public void setEmanta(String emanta) {
+		this.emanta = emanta;
+	}
+
+	public void setDataCadastro(Date dataCadastro) {
+		this.dataCadastro = dataCadastro;
+	}
+
+	public void setDataInicio(Date dataInicio) {
+		this.dataInicio = dataInicio;
+	}
+
+	public void setValor(float valor) {
+		this.valor = valor;
+	}
+
 	public String getNome() {
 		return nome;
 	}
