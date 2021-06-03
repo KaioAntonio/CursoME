@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.digitalse</groupId>
-	<artifactId>TextExtractSvc</artifactId>
+	<artifactId>CursoME</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>TextExtractSvc</name>
-	<description>Processing text document</description>
+	<name>CursoME</name>
+	<description>Me01</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
