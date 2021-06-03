@@ -1,10 +1,10 @@
-package org.digitalse.TextExtractSvc;
+package org.digitalse.Curso;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TextExtractSvcApplicationTests {
+class CursoApplicationTests {
 
 	@Test
 	void contextLoads() {
